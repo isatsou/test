@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open MS-CXH Protocol</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            try {
+                // Try to open the ms-cxh://setaddnewuser protocol
+                window.location.href = "ms-cxh://setaddnewuser";
+            } catch (e) {
+                console.log("Error: Unable to trigger the protocol.");
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Attempting to trigger the MS-CXH protocol...</h1>
+    <p>If the protocol is supported on this machine, it will trigger to add a new user.</p>
+</body>
+</html>
